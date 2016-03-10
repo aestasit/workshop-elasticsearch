@@ -1,0 +1,157 @@
+####<07-Feb-2016 23:28:18 o'clock EET> <Info> <Server> <localhost> <> <Thread-12> <> <> <> <1454880498060> <BEA-002624> <The administration protocol is "t3s" and is now configured.> 
+####<07-Feb-2016 23:28:18 o'clock EET> <Info> <RJVM> <localhost> <> <Thread-13> <> <> <> <1454880498076> <BEA-000570> <Network Configuration for Channel "ManagedServer1"
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 false
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true ResolveDNSName Enabled	 false> 
+####<07-Feb-2016 23:28:18 o'clock EET> <Info> <RJVM> <localhost> <> <Thread-13> <> <> <> <1454880498076> <BEA-000570> <Network Configuration for Channel "ManagedServer1"
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 false
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true ResolveDNSName Enabled	 false> 
+####<07-Feb-2016 23:28:18 o'clock EET> <Debug> <RJVM> <localhost> <> <Thread-13> <> <> <> <1454880498078> <BEA-000571> <Network Configuration Detail for Channel "ManagedServer1"
+ Channel Weight		 50
+ Accept Backlog		 300
+ Login Timeout		 5000ms
+ Max Message Size	 10000000
+ Message Timeout	 60s
+ Idle Timeout		 65s
+ Tunneling Timeout	 40s
+ Tunneling Ping		 45s> 
+####<07-Feb-2016 23:28:18 o'clock EET> <Info> <Server> <localhost> <> <Thread-13> <> <> <> <1454880498114> <BEA-002609> <Channel Service initialized.> 
+####<07-Feb-2016 23:28:52 o'clock EET> <Warning> <HTTP> <localhost> <ManagedServer1> <[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1454880532575> <BEA-101384> <WLServlet annotation is deprecated, please use servlet 3.0 annotation instead. App:MyApplication#2.1.10@RS_ViewController.war, Class:oracle.adfinternal.view.faces.activedata.AdsServlet> 
+####<07-Feb-2016 23:28:53 o'clock EET> <Warning> <EJB> <localhost> <ManagedServer1> <[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <f062bf8b-2be9-467c-930b-fb9ec19dac42-0000000b> <1454880533328> <BEA-012035> <The Remote interface method: public abstract oracle.bpel.services.bpm.common.IBPMContext oracle.bpel.services.rules.authentication.IDecisionAuthenticationService.createContextFromRequestObject(java.lang.Object) throws oracle.bpel.services.rules.DecisionServiceException in EJB DecisionAuthenticationServiceBean contains a parameter of type java.lang.Object which is not serializable. Though the EJB DecisionAuthenticationServiceBean has call-by-reference set to false, this parameter is not serializable and hence will be passed by reference. A parameter can be passed using call-by-value only if the parameter type is serializable.> 
+####<08-Feb-2016 05:29:01 o'clock EET> <Error> <Deployer> <localhost> <ManagedServer1> <DmsThread-1> <<WLS Kernel>> <> <f062bf8b-2be9-467c-930b-fb9ec19dac42-00000005> <1454902141194> <BEA-149028> <An invalid path, "servers/AdminServer/upload/MyApplication.ear", was specified for the application "MyApplication#2.1.10".> 
+####<08-Feb-2016 07:53:28 o'clock EET> <Error> <HTTP> <localhost> <ManagedServer1> <[ACTIVE] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <f062bf8b-2be9-467c-930b-fb9ec19dac42-00082b7b> <1454910808130> <BEA-101020> <[ServletContext@672379857[app:MyApplication module:/ path:null spec-version:3.0 version:2.1.10]] Servlet failed with an Exception
+java.lang.IllegalStateException: Cannot forward a response that is already committed
+	at weblogic.servlet.internal.RequestDispatcherImpl.forward(RequestDispatcherImpl.java:126)
+	at com.sun.faces.context.ExternalContextImpl.dispatch(ExternalContextImpl.java:546)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at oracle.adfinternal.view.faces.config.rich.RecordRequestAttributesDuringDispatch.dispatch(RecordRequestAttributesDuringDispatch.java:44)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at org.apache.myfaces.trinidadinternal.context.FacesContextFactoryImpl$OverrideDispatch.dispatch(FacesContextFactoryImpl.java:167)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:364)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:154)
+	at org.apache.myfaces.trinidad.view.ViewDeclarationLanguageWrapper.buildView(ViewDeclarationLanguageWrapper.java:94)
+	at org.apache.myfaces.trinidad.view.ViewDeclarationLanguageWrapper.buildView(ViewDeclarationLanguageWrapper.java:94)
+	at org.apache.myfaces.trinidadinternal.application.ViewDeclarationLanguageFactoryImpl$ChangeApplyingVDLWrapper.buildView(ViewDeclarationLanguageFactoryImpl.java:322)
+	at oracle.adfinternal.view.faces.lifecycle.ResponseRenderManager._processViewDefinitionLanguage(ResponseRenderManager.java:105)
+	at oracle.adfinternal.view.faces.lifecycle.ResponseRenderManager.runRenderView(ResponseRenderManager.java:41)
+	at oracle.adfinternal.view.faces.lifecycle.LifecycleImpl._renderResponse(LifecycleImpl.java:1095)
+	at oracle.adfinternal.view.faces.lifecycle.LifecycleImpl._executePhase(LifecycleImpl.java:389)
+	at oracle.adfinternal.view.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:255)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:594)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:280)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:254)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:136)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:346)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.adf.model.servlet.ADFBindingFilter.doFilter(ADFBindingFilter.java:192)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.adfinternal.view.faces.webapp.rich.RegistrationFilter.doFilter(RegistrationFilter.java:105)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl$FilterListChain.doFilter(TrinidadFilterImpl.java:502)
+	at oracle.adfinternal.view.faces.activedata.AdsFilter.doFilter(AdsFilter.java:60)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl$FilterListChain.doFilter(TrinidadFilterImpl.java:502)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl._doFilterImpl(TrinidadFilterImpl.java:327)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl.doFilter(TrinidadFilterImpl.java:229)
+	at org.apache.myfaces.trinidad.webapp.TrinidadFilter.doFilter(TrinidadFilter.java:92)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.adf.library.webapp.LibraryFilter.doFilter(LibraryFilter.java:202)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.security.jps.ee.http.JpsAbsFilter$1.run(JpsAbsFilter.java:137)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:460)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:120)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:217)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:81)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:220)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3436)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3402)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:57)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2285)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2201)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1572)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:255)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+> 
+####<08-Feb-2016 07:53:59 o'clock EET> <Error> <HTTP> <localhost> <ManagedServer1> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <f062bf8b-2be9-467c-930b-fb9ec19dac42-00082edc> <1454910839661> <BEA-101020> <[ServletContext@672379857[app:MyApplication module:/ path:null spec-version:3.0 version:2.1.10]] Servlet failed with an Exception
+java.lang.IllegalStateException: Cannot forward a response that is already committed
+	at weblogic.servlet.internal.RequestDispatcherImpl.forward(RequestDispatcherImpl.java:126)
+	at com.sun.faces.context.ExternalContextImpl.dispatch(ExternalContextImpl.java:546)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at oracle.adfinternal.view.faces.config.rich.RecordRequestAttributesDuringDispatch.dispatch(RecordRequestAttributesDuringDispatch.java:44)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at javax.faces.context.ExternalContextWrapper.dispatch(ExternalContextWrapper.java:93)
+	at org.apache.myfaces.trinidadinternal.context.FacesContextFactoryImpl$OverrideDispatch.dispatch(FacesContextFactoryImpl.java:167)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:364)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:154)
+	at org.apache.myfaces.trinidad.view.ViewDeclarationLanguageWrapper.buildView(ViewDeclarationLanguageWrapper.java:94)
+	at org.apache.myfaces.trinidad.view.ViewDeclarationLanguageWrapper.buildView(ViewDeclarationLanguageWrapper.java:94)
+	at org.apache.myfaces.trinidadinternal.application.ViewDeclarationLanguageFactoryImpl$ChangeApplyingVDLWrapper.buildView(ViewDeclarationLanguageFactoryImpl.java:322)
+	at oracle.adfinternal.view.faces.lifecycle.ResponseRenderManager._processViewDefinitionLanguage(ResponseRenderManager.java:105)
+	at oracle.adfinternal.view.faces.lifecycle.ResponseRenderManager.runRenderView(ResponseRenderManager.java:41)
+	at oracle.adfinternal.view.faces.lifecycle.LifecycleImpl._renderResponse(LifecycleImpl.java:1095)
+	at oracle.adfinternal.view.faces.lifecycle.LifecycleImpl._executePhase(LifecycleImpl.java:389)
+	at oracle.adfinternal.view.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:255)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:594)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:280)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:254)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:136)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:346)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.adf.model.servlet.ADFBindingFilter.doFilter(ADFBindingFilter.java:192)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.adfinternal.view.faces.webapp.rich.RegistrationFilter.doFilter(RegistrationFilter.java:105)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl$FilterListChain.doFilter(TrinidadFilterImpl.java:502)
+	at oracle.adfinternal.view.faces.activedata.AdsFilter.doFilter(AdsFilter.java:60)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl$FilterListChain.doFilter(TrinidadFilterImpl.java:502)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl._doFilterImpl(TrinidadFilterImpl.java:327)
+	at org.apache.myfaces.trinidadinternal.webapp.TrinidadFilterImpl.doFilter(TrinidadFilterImpl.java:229)
+	at org.apache.myfaces.trinidad.webapp.TrinidadFilter.doFilter(TrinidadFilter.java:92)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.adf.library.webapp.LibraryFilter.doFilter(LibraryFilter.java:202)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.security.jps.ee.http.JpsAbsFilter$1.run(JpsAbsFilter.java:137)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:460)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:120)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:217)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:81)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:220)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:79)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3436)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3402)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:57)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2285)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2201)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1572)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:255)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+> 
+####<08-Feb-2016 07:54:36 o'clock EET> <Error> <HTTP> <localhost> <ManagedServer1> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <f062bf8b-2be9-467c-930b-fb9ec19dac42-00083be3> <1454910876429> <BEA-101020> <[ServletContext@672379857[app:MyApplication module:/ path:null spec-version:3.0 version:2.1.10]] Servlet failed with an Exception

@@ -1,0 +1,19 @@
+#Start-Date:	2016-02-15	19:19:38
+#Software:	WebLogic
+#Fields:	date time cs-method ctx-ecid ctx-rid cs-uri sc-status bytes
+#Version:	1.0
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-0058444b	0	/faces/searchJournal.jspx?Adf-Window-Id=w0&amp;Adf-Page-Id=45	200	6727
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844c1	0	/faces/editJournal.jspx	200	67
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844c8	0	/faces/editDecision.jspx	200	67
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844e5	0	/faces/editFolio.jspx	200	67
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844ea	0	/faces/AddDecision.jspx?Adf-Window-Id=w34&amp;Adf-Page-Id=71	200	21581
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844c2	0	/faces/searchJournal.jspx?Adf-Window-Id=w0&amp;Adf-Page-Id=60	200	8212
+2016-02-08	10:17:10	GET	f062bf8b-2be9-467c-930b-fb9ec19dac42-00584563	0	/faces/AddDecision.jspx?Adf-Rich-Message=true&amp;unique=1454919430451&amp;oracle.adf.view.rich.STREAM=pt1:tablePersons&amp;Adf-Page-Id=71&amp;javax.faces.ViewState=!-gskd5pzki&amp;Adf-Window-Id=w34	200	3778
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844bf	0	/faces/editFolio.jspx?Adf-Window-Id=w0&amp;Adf-Page-Id=29	200	14285
+2016-02-08	10:17:10	GET	f062bf8b-2be9-467c-930b-fb9ec19dac42-005845c0	0	/faces/editDecision.jspx?_rtrnId=1454919429924&amp;_afrPage=s34	200	3970
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005845da	0	/faces/AddDecision.jspx?Adf-Window-Id=w16&amp;Adf-Page-Id=31	200	23555
+2016-02-08	10:17:10	POST	f062bf8b-2be9-467c-930b-fb9ec19dac42-005844e7	0	/faces/editJournal.jspx?Adf-Window-Id=w0&amp;Adf-Page-Id=24	200	43940
+2016-02-08	10:17:10	GET	f062bf8b-2be9-467c-930b-fb9ec19dac42-0058460b	0	/faces/editDecision.jspx?_rtrnId=1454919429924&amp;_afrLoop=663463328644283&amp;_afrWindowMode=1&amp;Adf-Window-Id=w22&amp;_afrPage=s34	200	21789
+2016-02-08	10:17:10	GET	f062bf8b-2be9-467c-930b-fb9ec19dac42-00584622	0	/faces/editFolio.jspx?Adf-Rich-Message=true&amp;unique=1454919430549&amp;oracle.adf.view.rich.STREAM=pt1:pc6:tableAdr&amp;Adf-Page-Id=29&amp;javax.faces.ViewState=!-ryjhyuae6&amp;oracle.adf.view.rich.forceHTML=true&amp;Adf-Window-Id=w0	200	4231
+2016-02-08	10:17:10	GET	f062bf8b-2be9-467c-930b-fb9ec19dac42-005846aa	0	/faces/AddDecision.jspx?Adf-Rich-Message=true&amp;unique=1454919430601&amp;oracle.adf.view.rich.STREAM=pt1:pcTreeTableRecordType:treeTableRecordType&amp;Adf-Page-Id=31&amp;javax.faces.ViewState=!psmi6gtyh&amp;Adf-Window-Id=w16	200	7093
+2016-02-15	15:12:14	-	d8543a0b-0117-4983-afa4-a08b00e2d057-00005466	-		400	0

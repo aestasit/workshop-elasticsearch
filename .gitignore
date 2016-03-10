@@ -1,0 +1,10 @@
+.gradle
+build
+.vagrant
+.classpath
+.project
+org.eclipse.jdt.core.prefs
+*.iml
+*.ipr
+*.iws
+/elastic-test-suite/storage

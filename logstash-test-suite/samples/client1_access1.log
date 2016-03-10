@@ -1,0 +1,7 @@
+10.10.11.29 - LF [03/Nov/2015:14:30:01 +0100] "GET /client-1.0/abc/bbb HTTP/1.1" 200 4353 
+10.10.11.29 - LF [03/Nov/2015:14:30:01 +0100] "GET /client-1.0/abc/bbb.do HTTP/1.1" 200 5593 
+10.10.11.59 - bn [03/Nov/2015:14:30:03 +0100] "GET /client-1.0/abc/bbb.jsp HTTP/1.1" 200 746 
+10.10.11.59 - bn [03/Nov/2015:14:30:03 +0100] "GET /client-1.0/abc/bbb.jsp?titel=Overblik HTTP/1.1" 200 2380 
+10.10.11.59 - bn [03/Nov/2015:14:30:03 +0100] "GET /client-1.0/abc/bbb.do?viaFrame=true HTTP/1.1" 200 18863 
+10.10.11.59 - bn [03/Nov/2015:14:30:03 +0100] "GET /client-1.0/abc/bbb/ajaxmultiservlet HTTP/1.1" 200 11 
+10.10.11.59 - bn [03/Nov/2015:14:30:03 +0100] "GET /client-1.0/abc/bbb/ajaxmultiservlet HTTP/1.1" 200 45 

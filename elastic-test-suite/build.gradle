@@ -1,0 +1,41 @@
+
+plugins {
+  id 'groovy'
+  id 'idea'
+  id 'eclipse'
+}
+
+group = 'org.elastic.hero'
+version = '1.0-SNAPSHOT'
+
+repositories {
+  jcenter()
+  mavenCentral()
+}
+
+configurations.all {
+  exclude module: "groovy"
+  exclude module: "slf4j-log4j12"
+  exclude module: "commons-collections"
+  exclude module: "commons-logging"
+}
+
+dependencies {
+
+  compile      "org.codehaus.groovy:groovy-all:2.4.5"
+  compile      "org.elasticsearch:elasticsearch:${elasticsearchVersion}"
+  compile      "com.vividsolutions:jts:1.13"
+
+  testCompile  "org.elasticsearch:elasticsearch:${elasticsearchVersion}:tests"
+  testCompile  "org.apache.lucene:lucene-expressions:${luceneTestFrameworkVersion}"
+  testCompile  "org.apache.lucene:lucene-test-framework:${luceneTestFrameworkVersion}"
+
+
+  runtime      "com.github.spullara.mustache.java:compiler:0.8.13"
+  runtime      "ch.qos.logback:logback-classic:${logbackVersion}"
+  runtime      "net.java.dev.jna:jna:4.1.0"
+
+  testCompile  "junit:junit:${junitVersion}"
+
+}
+
