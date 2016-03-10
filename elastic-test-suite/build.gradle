@@ -15,13 +15,14 @@ repositories {
 
 configurations.all {
   exclude module: "groovy"
-  exclude module: "slf4j-log4j12"
+  // exclude module: "slf4j-log4j12"
   exclude module: "commons-collections"
   exclude module: "commons-logging"
 }
 
 dependencies {
 
+  compile      "org.slf4j:slf4j-api:1.7.18"
   compile      "org.codehaus.groovy:groovy-all:2.4.5"
   compile      "org.elasticsearch:elasticsearch:${elasticsearchVersion}"
   compile      "com.vividsolutions:jts:1.13"
